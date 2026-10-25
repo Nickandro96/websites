@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Methodology from "./pages/Methodology";
 import References from "./pages/References";
 import Resources from "./pages/Resources";
+import ResourceGuide from "./pages/ResourceGuide";
 import Quality from "./pages/services/Quality";
 import Regulatory from "./pages/services/Regulatory";
 import Rabc from "./pages/services/Rabc";
@@ -29,7 +30,8 @@ function Router() {
       <Route path={"/methodologie"} component={Methodology} />
       <Route path={"/references"} component={References} />
       <Route path={"/ressources"} component={Resources} />
-      
+      <Route path={"/ressources/:slug"} component={ResourceGuide} />
+
       {/* Service Details */}
       <Route path={"/services/qualite"} component={Quality} />
       <Route path={"/services/reglementaire"} component={Regulatory} />

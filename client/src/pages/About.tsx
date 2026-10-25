@@ -1,130 +1,143 @@
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { CheckCircle2, Award, Users, Target } from "lucide-react";
 import { Link } from "wouter";
 
 export default function About() {
+  const experience = [
+    [
+      "Linet France — Responsable QHSE",
+      "Pilotage sur quatre sites dans la distribution de dispositifs médicaux : systèmes qualité, obligations du distributeur, CAPA, audits et démarche RABC. Coordination de travaux de qualification IQ/OQ/PQ, de sécurité et d’environnement.",
+    ],
+    [
+      "Essity — Système qualité et affaires réglementaires",
+      "Dispositifs médicaux de compression : système ISO 13485, travaux de documentation technique MDR, audits, traitement des écarts et validations de processus.",
+    ],
+    [
+      "Sanofi Pasteur — Assurance qualité système",
+      "Environnement pharmaceutique : gestion des habilitations et compétences, traitement des anomalies et suivi des actions dans un contexte BPF/GMP.",
+    ],
+    [
+      "Cermix France — Management de la qualité",
+      "Industrie : audits internes ISO 9001, accompagnement des audits externes, revues de direction et qualification des fournisseurs.",
+    ],
+  ];
   return (
     <Layout>
-      {/* Header */}
-      <section className="bg-secondary/30 py-20 border-b border-border">
-        <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">L'Expertise au service de la Conformité</h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              N3 Conseil est né d'une ambition simple : rendre la conformité plus claire, plus accessible et plus efficace pour les entreprises des secteurs réglementés.
+      <section className="bg-secondary/30 py-16 md:py-20 border-b border-border">
+        <div className="container max-w-4xl">
+          <p className="text-sm uppercase tracking-wider font-semibold text-muted-foreground mb-4">
+            Votre interlocuteur
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            Nick NGANKEP, fondateur de N3 Conseil
+          </h1>
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            Mon parcours relie les systèmes qualité, les affaires réglementaires
+            des dispositifs médicaux et le pilotage QHSE sur le terrain. Je vous
+            aide à clarifier vos priorités et à organiser des actions que vos
+            équipes peuvent suivre.
+          </p>
+        </div>
+      </section>
+      <section className="py-16 md:py-24">
+        <div className="container max-w-4xl space-y-10">
+          <div>
+            <h2 className="text-3xl font-bold mb-5">
+              Des exigences aux décisions opérationnelles
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Un audit à préparer, des actions correctives en attente, un
+              dossier technique à structurer ou un processus à qualifier : ces
+              situations demandent de relier les exigences aux pratiques. Mon
+              approche consiste à documenter les constats, prioriser les risques
+              et organiser le suivi avec les personnes concernées.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Vision & Mission */}
-      <section className="py-24">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-primary mb-4">Notre Vision</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Redéfinir la conformité comme un avantage stratégique. Nous croyons en des systèmes simples, efficaces et alignés avec les réalités du terrain, capables d'élever la qualité, de maîtriser les risques et d'inspirer la confiance.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold text-primary mb-4">Notre Histoire</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Après plusieurs années d'expérience en Qualité, Affaires Réglementaires, dispositifs médicaux et RABC, Nick NGANKEP a fondé N3 Conseil pour mettre son expertise au service des organisations souhaitant renforcer leurs pratiques et atteindre un haut niveau d'exigence.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-secondary/20 p-8 border border-border">
-              <h3 className="text-2xl font-bold text-primary mb-6">Nos Valeurs Fondamentales</h3>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="bg-white p-3 h-fit border border-border shadow-sm">
-                    <Award className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Fiabilité</h4>
-                    <p className="text-muted-foreground">Une expertise solide, fondée sur des méthodologies éprouvées et une parfaite maîtrise des normes.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="bg-white p-3 h-fit border border-border shadow-sm">
-                    <Users className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Transparence</h4>
-                    <p className="text-muted-foreground">Une communication claire, honnête et responsable à chaque étape de la démarche.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="bg-white p-3 h-fit border border-border shadow-sm">
-                    <Target className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Engagement</h4>
-                    <p className="text-muted-foreground">Un engagement total auprès de nos clients pour une amélioration durable des performances.</p>
-                  </div>
-                </div>
-              </div>
+          <div>
+            <h2 className="text-3xl font-bold mb-5">
+              Un parcours dans les dispositifs médicaux, la pharmacie et
+              l’industrie
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Ces expériences relèvent de mon parcours salarié, distinct des
+              missions de N3 Conseil.
+            </p>
+            <div className="space-y-5">
+              {experience.map(([title, text]) => (
+                <article
+                  key={title}
+                  className="border-l-2 border-primary pl-6 py-2"
+                >
+                  <h3 className="font-bold text-xl mb-3">{title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {text}
+                  </p>
+                </article>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6 border border-white/20">
-              <div className="text-5xl font-bold mb-2">+70</div>
-              <div className="text-lg opacity-80">Audits Internes Réalisés</div>
-            </div>
-            <div className="p-6 border border-white/20">
-              <div className="text-5xl font-bold mb-2">+15</div>
-              <div className="text-lg opacity-80">Certifications Accompagnées</div>
-            </div>
-            <div className="p-6 border border-white/20">
-              <div className="text-5xl font-bold mb-2">100%</div>
-              <div className="text-lg opacity-80">Engagement Client</div>
-            </div>
+          <div>
+            <h2 className="text-3xl font-bold mb-5">
+              Formation et méthodes de travail
+            </h2>
+            <ul className="list-disc pl-5 space-y-3 text-muted-foreground">
+              <li>
+                Mastère spécialisé Manager de la qualité — Arts et Métiers,
+                2020–2021.
+              </li>
+              <li>Master QSE — Hauts-de-France, 2018–2020.</li>
+              <li>
+                Analyse des causes, CAPA, audits, gestion documentaire,
+                indicateurs et pilotage multi-sites.
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-
-      {/* Consultant Profile */}
-      <section className="py-24">
-        <div className="container">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="w-full md:w-1/3 aspect-[3/4] bg-secondary relative">
-              {/* Placeholder for portrait */}
-              <div className="absolute inset-0 flex items-center justify-center bg-secondary/50 text-muted-foreground">
-                Photo Consultant
-              </div>
-            </div>
-            <div className="w-full md:w-2/3">
-              <h2 className="text-3xl font-bold text-primary mb-2">Nick NGANKEP</h2>
-              <p className="text-xl text-primary/80 mb-6">Consultant Principal & Fondateur</p>
-              <div className="space-y-4 text-lg text-muted-foreground mb-8">
-                <p>
-                  Expert en Qualité et Affaires Réglementaires, je suis spécialisé dans l'accompagnement des entreprises du dispositif médical et des secteurs à fortes contraintes normatives.
-                </p>
-                <p>
-                  Mon approche pragmatique vise à transformer la contrainte réglementaire en levier de performance opérationnelle. Je m'attache à construire des systèmes qualité qui vivent et servent l'entreprise au quotidien.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-4 py-2 bg-secondary/50 text-primary font-medium text-sm border border-border">ISO 13485 Lead Auditor</span>
-                <span className="px-4 py-2 bg-secondary/50 text-primary font-medium text-sm border border-border">MDR Specialist</span>
-                <span className="px-4 py-2 bg-secondary/50 text-primary font-medium text-sm border border-border">RABC Expert</span>
-              </div>
-              <Link href="/contact">
-                <Button size="lg" className="rounded-none px-8">
-                  Me contacter
-                </Button>
-              </Link>
-            </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              [
+                "Clarté",
+                "Des priorités explicites et des livrables compréhensibles.",
+              ],
+              [
+                "Rigueur",
+                "Des constats reliés aux documents et aux pratiques observées.",
+              ],
+              [
+                "Transfert",
+                "Des outils de suivi que vos équipes peuvent reprendre.",
+              ],
+            ].map(([title, text]) => (
+              <article key={title} className="border border-border p-6">
+                <h3 className="font-bold text-xl mb-3">{title}</h3>
+                <p className="text-muted-foreground">{text}</p>
+              </article>
+            ))}
+          </div>
+          <p className="text-lg text-muted-foreground">
+            Basé à Tours, j’interviens dans toute la France selon les modalités
+            convenues. Le premier échange sert à préciser votre besoin et à
+            vérifier l’adéquation avec le périmètre d’intervention proposé. Les
+            modalités, le calendrier et les livrables sont ensuite définis dans
+            la proposition de mission.
+          </p>
+          <div className="flex flex-wrap gap-6">
+            <Link
+              href="/services"
+              className="font-semibold underline underline-offset-4"
+            >
+              Voir les missions proposées
+            </Link>
+            <Link
+              href="/methodologie"
+              className="font-semibold underline underline-offset-4"
+            >
+              Comprendre la méthode
+            </Link>
+            <Link
+              href="/contact"
+              className="font-semibold underline underline-offset-4"
+            >
+              Échanger avec Nick NGANKEP
+            </Link>
           </div>
         </div>
       </section>
