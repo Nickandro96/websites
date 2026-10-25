@@ -97,6 +97,7 @@ jspm_packages/
 .storybook-out
 
 # Temporary folders
+.prerender/
 tmp/
 temp/
 

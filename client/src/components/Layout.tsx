@@ -59,7 +59,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       >
         <div className="container flex items-center justify-between">
-          <Link href="/">
+          <Link href="/" asChild>
             <a className="flex items-center gap-2 group">
               <div className="h-10 w-10 bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl rounded-none group-hover:bg-primary/90 transition-colors">
                 N3
@@ -74,7 +74,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
+              <Link key={item.path} href={item.path} asChild>
                 <a className={cn(
                   "text-sm font-medium transition-colors hover:text-primary relative py-1",
                   location === item.path 
@@ -107,7 +107,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="fixed inset-0 z-40 bg-background pt-24 px-6 lg:hidden animate-in slide-in-from-top-10 duration-200">
           <nav className="flex flex-col gap-6 text-lg font-medium">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
+              <Link key={item.path} href={item.path} asChild>
                 <a className={cn(
                   "py-2 border-b border-border/50 transition-colors",
                   location === item.path ? "text-primary border-primary" : "text-muted-foreground"
@@ -148,20 +148,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <h4 className="font-bold text-lg mb-6">Services</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
-              <li><Link href="/services/qualite"><a className="hover:text-white transition-colors">Qualité ISO 13485</a></Link></li>
-              <li><Link href="/services/reglementaire"><a className="hover:text-white transition-colors">Affaires Réglementaires MDR</a></Link></li>
-              <li><Link href="/services/rabc"><a className="hover:text-white transition-colors">RABC Biocontamination</a></Link></li>
-              <li><Link href="/services/rse"><a className="hover:text-white transition-colors">RSE ISO 26000</a></Link></li>
+              <li><Link href="/services/qualite" asChild><a className="hover:text-white transition-colors">Qualité ISO 13485</a></Link></li>
+              <li><Link href="/services/reglementaire" asChild><a className="hover:text-white transition-colors">Affaires Réglementaires MDR</a></Link></li>
+              <li><Link href="/services/rabc" asChild><a className="hover:text-white transition-colors">RABC Biocontamination</a></Link></li>
+              <li><Link href="/services/rse" asChild><a className="hover:text-white transition-colors">RSE ISO 26000</a></Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-lg mb-6">Entreprise</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
-              <li><Link href="/a-propos"><a className="hover:text-white transition-colors">À propos</a></Link></li>
-              <li><Link href="/methodologie"><a className="hover:text-white transition-colors">Méthodologie</a></Link></li>
-              <li><Link href="/references"><a className="hover:text-white transition-colors">Références</a></Link></li>
-              <li><Link href="/contact"><a className="hover:text-white transition-colors">Contact</a></Link></li>
+              <li><Link href="/a-propos" asChild><a className="hover:text-white transition-colors">À propos</a></Link></li>
+              <li><Link href="/methodologie" asChild><a className="hover:text-white transition-colors">Méthodologie</a></Link></li>
+              <li><Link href="/references" asChild><a className="hover:text-white transition-colors">Références</a></Link></li>
+              <li><Link href="/contact" asChild><a className="hover:text-white transition-colors">Contact</a></Link></li>
             </ul>
           </div>
 
@@ -187,8 +187,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/60">
           <p>© 2026 N3 Conseil. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <Link href="/mentions-legales"><a className="hover:text-white transition-colors">Mentions Légales</a></Link>
-            <Link href="/confidentialite"><a className="hover:text-white transition-colors">Politique de Confidentialité</a></Link>
+            <Link href="/mentions-legales" asChild><a className="hover:text-white transition-colors">Mentions Légales</a></Link>
+            <Link href="/confidentialite" asChild><a className="hover:text-white transition-colors">Politique de Confidentialité</a></Link>
           </div>
         </div>
       </footer>

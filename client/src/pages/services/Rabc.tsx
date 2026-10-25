@@ -8,14 +8,14 @@ export default function Rabc() {
     <Layout>
       <section className="bg-secondary/30 py-12 border-b border-border">
         <div className="container">
-          <Link href="/services">
+          <Link href="/services" asChild>
             <a className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" /> Retour aux services
             </a>
           </Link>
           <div className="max-w-4xl">
             <span className="text-chart-2 font-bold tracking-wider uppercase text-sm mb-4 block">NF EN 14065</span>
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">Méthode RABC</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">Accompagnement RABC en blanchisserie</h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Maîtrisez la biocontamination textile en blanchisserie hospitalière et industrielle pour garantir la sécurité du patient.
             </p>

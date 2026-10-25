@@ -25,11 +25,11 @@ export default function Home() {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-primary leading-[1.1]">
-              Transformez vos <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">obligations</span> en avantages compétitifs
+              Conseil en <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">qualité</span>, MDR et RABC
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              N3 Conseil sécurise votre conformité et booste votre performance dans les secteurs des dispositifs médicaux, de la qualité et de la RSE.
+              N3 Conseil accompagne les fabricants de dispositifs médicaux, les établissements de santé et les blanchisseries dans leurs démarches qualité, réglementaires et RSE. Basé en région parisienne, le cabinet intervient dans toute la France.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -40,7 +40,7 @@ export default function Home() {
               </Link>
               <Link href="/contact">
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-none border-2 hover:bg-primary/5">
-                  Demander un audit gratuit
+                  Premier échange gratuit
                 </Button>
               </Link>
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="text-chart-2 h-5 w-5" />
-                <span>+15 Certifications</span>
+                <span>+15 Certifications accompagnées</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="text-chart-2 h-5 w-5" />
@@ -101,7 +101,7 @@ export default function Home() {
                 </p>
                 <Link href="/services/qualite">
                   <span className="inline-flex items-center text-primary font-semibold cursor-pointer hover:underline">
-                    En savoir plus <ArrowRight className="ml-2 h-4 w-4" />
+                    Accompagnement ISO 9001 et ISO 13485 <ArrowRight className="ml-2 h-4 w-4" />
                   </span>
                 </Link>
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
                 </p>
                 <Link href="/services/reglementaire">
                   <span className="inline-flex items-center text-white font-semibold cursor-pointer hover:underline">
-                    Découvrir <ArrowRight className="ml-2 h-4 w-4" />
+                    Conseil MDR <ArrowRight className="ml-2 h-4 w-4" />
                   </span>
                 </Link>
               </div>
@@ -153,7 +153,7 @@ export default function Home() {
                 </p>
                 <Link href="/services/rabc">
                   <span className="inline-flex items-center text-primary font-semibold cursor-pointer hover:underline">
-                    Explorer <ArrowRight className="ml-2 h-4 w-4" />
+                    Accompagnement RABC <ArrowRight className="ml-2 h-4 w-4" />
                   </span>
                 </Link>
               </div>
@@ -250,7 +250,7 @@ export default function Home() {
         <div className="container relative z-10 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-6">Prêt à sécuriser votre conformité ?</h2>
           <p className="text-xl text-primary-foreground/80 mb-10">
-            Échangeons sur vos projets et vos enjeux. Bénéficiez d'un premier diagnostic gratuit et sans engagement.
+            Échangeons sur vos projets et vos enjeux lors d'un premier entretien gratuit de 30 minutes, sans engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

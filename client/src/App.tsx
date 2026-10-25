@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, Router as WouterRouter } from "wouter";
-import { useHashLocation } from "wouter/use-hash-location";
+import Seo from "./components/Seo";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -52,7 +52,7 @@ function Router() {
 //   to keep consistent foreground/background color across components
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
-function App() {
+function App({ ssrPath }: { ssrPath?: string } = {}) {
   return (
     <ErrorBoundary>
       <ThemeProvider
@@ -61,7 +61,8 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <WouterRouter hook={useHashLocation}>
+          <WouterRouter ssrPath={ssrPath}>
+            <Seo />
             <Router />
           </WouterRouter>
         </TooltipProvider>
