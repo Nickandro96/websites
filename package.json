@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "vite build --configLoader runner && vite build --configLoader runner --ssr ../scripts/prerender.tsx --outDir ../.prerender && node .prerender/prerender.js",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
+    "check:seo": "node scripts/check-seo.mjs",
     "format": "prettier --write ."
   },
   "dependencies": {

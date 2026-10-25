@@ -8,16 +8,16 @@ export default function Quality() {
     <Layout>
       <section className="bg-secondary/30 py-12 border-b border-border">
         <div className="container">
-          <Link href="/services">
+          <Link href="/services" asChild>
             <a className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" /> Retour aux services
             </a>
           </Link>
           <div className="max-w-4xl">
             <span className="text-chart-2 font-bold tracking-wider uppercase text-sm mb-4 block">Expertise ISO 9001 & 13485</span>
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">Management de la Qualité</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">Accompagnement qualité ISO 9001 et ISO 13485</h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Structurez votre organisation et garantissez la conformité de vos processus avec un Système de Management de la Qualité (SMQ) robuste et performant.
+              Vous préparez une certification ou souhaitez améliorer votre système de management de la qualité ? N3 Conseil vous accompagne dans la structuration de vos processus, la gestion documentaire et la préparation de vos audits selon les référentiels ISO 9001 et ISO 13485, en fonction de votre activité.
             </p>
           </div>
         </div>

@@ -8,16 +8,16 @@ export default function Regulatory() {
     <Layout>
       <section className="bg-primary text-primary-foreground py-12 border-b border-white/10">
         <div className="container">
-          <Link href="/services">
+          <Link href="/services" asChild>
             <a className="inline-flex items-center text-sm font-medium text-white/60 hover:text-white mb-8 transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" /> Retour aux services
             </a>
           </Link>
           <div className="max-w-4xl">
             <span className="text-chart-2 font-bold tracking-wider uppercase text-sm mb-4 block">MDR 2017/745</span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Affaires Réglementaires</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Accompagnement MDR pour vos dispositifs médicaux</h1>
             <p className="text-xl text-white/80 leading-relaxed max-w-2xl">
-              Assurez la conformité de vos dispositifs médicaux au Règlement Européen (MDR) et sécurisez leur marquage CE.
+              N3 Conseil accompagne les entreprises du dispositif médical dans leur démarche de conformité au règlement européen MDR : stratégie réglementaire, documentation technique et suivi après commercialisation, selon votre dispositif et l’avancement de votre projet.
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Regulatory() {
                   Le nouveau règlement européen a considérablement élevé les exigences en matière de documentation technique, d'évaluation clinique et de surveillance après commercialisation.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Nous vous aidons à naviguer dans cette complexité pour constituer des dossiers techniques robustes, capables de passer l'épreuve de l'organisme notifié.
+                  Nous vous aidons à structurer votre documentation technique et à préparer les échanges avec les parties prenantes de votre démarche de conformité.
                 </p>
               </div>
 
@@ -63,7 +63,7 @@ export default function Regulatory() {
               <div className="bg-secondary p-8 border border-border">
                 <h3 className="text-xl font-bold text-primary mb-4">Transition MDR</h3>
                 <p className="mb-6 text-muted-foreground text-sm">
-                  La période de transition touche à sa fin. Sécurisez vos certificats dès maintenant.
+                  Faites le point sur l’avancement de votre projet MDR et les actions à prioriser selon votre dispositif et votre situation.
                 </p>
                 <Link href="/contact">
                   <Button className="w-full font-bold">
